@@ -1,0 +1,51 @@
+.thumbs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 549px) {
+    .thumbs {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .my-work-title h3 {
+        left: 32%;
+        font-size: 1em;
+        top: -35px;
+    }
+    .thumbs {
+        width: 100%;
+        padding: 5px;
+    }
+    .first, .second {
+        width: 45%;
+    }
+    .third {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .header-title {
+        font-weight: 500;
+        font-size: 3em;
+    }
+    .header-logo {
+        width: 90px;
+        height: 100px;
+    }
+    .header-span {
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+    .my-work-title h3 {
+        left: 40%;
+        font-size: 1.2em;
+        top: -40px;
+    }
+    .first, .second, .third {
+        width: 32%;
+    }
+}
