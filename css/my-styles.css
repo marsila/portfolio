@@ -22,7 +22,12 @@ a {
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
     top: 0;
+}
+
+.border-red {
+    border: 1px solid red;
 }
 
 header-title {
@@ -49,6 +54,42 @@ header-title {
     position: absolute;
     color: #8e228a;
     top: 2em;
+}
+
+.about-me {
+    width: 95%;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.about-me img {
+    float: left;
+    width: 30%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 100px;
+}
+
+.about-me p {
+    width: 70%;
+    float: right;
+    text-align: left;
+    text-justify: auto;
+}
+
+.about-me {
+    display: block;
+    z-index: 10;
+    background-color: #fff;
+    position: absolute;
+    -webkit-transform: translate(-9999px, 0);
+    transform: translate(-9999px, 0);
+    transition: transform 0.3s ease;
+}
+
+.about-me.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
 }
 
 main {
@@ -93,7 +134,7 @@ main {
     margin-right: auto;
 }
 
-.first, .second, .third {
+.thumbnail {
     padding: 5px;
     display: block;
     margin-bottom: 20px;
@@ -107,7 +148,7 @@ main {
     margin-right: auto;
 }
 
-.first:hover, .second:hover, .third:hover {
+.thumbnail:hover {
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 4);
 }
 
@@ -123,11 +164,20 @@ main {
 }
 
 .description {
+    margin-top: .5em;
+    padding-top: .5em;
     overflow: hidden;
     max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
+}
+
+.description a {
+    font-weight: 600;
+    color: #ad057c;
+}
+
+.description a:hover {
+    color: #273c51;
 }
 
 footer {
@@ -142,15 +192,14 @@ footer {
     margin-left: 10px;
     padding-top: 10px;
     position: relative;
-    z-index: 10;
+    z-index: 11;
+    font-size: 1em;
+    font-weight: 600;
 }
 
 .back-to-top {
     position: absolute;
     width: 100%;
-    /* height: 100px; */
-    /* top: -50px; */
-    /* left: 0px; */
 }
 
 footer a.top {
